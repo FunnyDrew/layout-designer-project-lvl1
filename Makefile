@@ -6,7 +6,7 @@ lint:
 	npx htmlhint ./src/*.html
 
 deploy:
-	npx surge ./src/
+	npx surge ./src/ --domain myfirst-project.surge.sh/
 
 sync:
 	npx browser-sync start -s 'src' --files 'src/*.html'

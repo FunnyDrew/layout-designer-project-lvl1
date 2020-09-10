@@ -101,12 +101,12 @@ li {
   height: 200px;
 }
 
-.content-conteiner {
+.content-conteiner-colume {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .content-conteiner p {
@@ -122,4 +122,46 @@ li {
 
   border: solid 1px white;
   border-radius: 10px;
+}
+
+.block {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.advantages {  
+  display: flex;  
+  justify-items: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.advantage-block{
+  width: 30%;
+
+  margin: 20px;
+}
+
+.about{
+  display: flex;
+  justify-content: center;  
+
+  background-color:  #f7f7f7;
+}
+.content-conteiner-row {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: auto;  
+}
+
+.about-content {
+  width: 45%;
+}
+
+.block-image {
+  width: 30%;
 }

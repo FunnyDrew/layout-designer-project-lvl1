@@ -1,6 +1,9 @@
 /** CSS STYLE **/
 body {
+  box-sizing: borber-box;
+
   color: #303846;
+
   font-size: 16px;
   font-family: Lato, sans-serif;
   line-height: 1.5;
@@ -16,48 +19,53 @@ h1 {
 h2 {
   margin-top: 0;
   margin-bottom: 0.5em;
+
   font-size: 1.8em;
 }
 
 ul {
-  list-style: none; 
-  margin: 0 auto;
-  padding-left: 0;
+  list-style: none;
 }
+
 a {
-  text-decoration: none;  
   color: #303846;
+  text-decoration: none;
 }
+
 li {
-  margin-left: 10px;  
+  margin: 5px;
 }
 
 .header {
   display: flex;
-  justify-content: left;
-  align-content: center;
+  align-items: center;
+  justify-content: space-between;
   height: 60px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 5px 20px 5px 20px;
+
+  font-size: 0.85em;
+
   border-bottom: solid 1px black;
 }
 
 .logo {
-  display: flex;  
+  display: flex;
+  align-content: center;
 }
 
 .logo-img {
-  height: 30px;
-  width: 30px;
+  width: 40px;
+
+  height: 40px;
 }
 
-.menu {
-  height: 30px;
-  background-color: gray;
+.logo-name {
+  margin: auto;
+  padding: 10px;
+
+  font-size: 1rem;
 }
 
 .nav {
-  display: flex;  
+  display: flex;
 }

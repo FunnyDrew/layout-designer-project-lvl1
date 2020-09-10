@@ -165,3 +165,28 @@ li {
 .block-image {
   width: 30%;
 }
+
+.section {
+  background-color:  #f7f7f7;
+}
+
+.content-box {
+  display:flex;
+  width: 1000px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+
+.flex-column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-size {
+  width: 50%
+}
+
+.form-view {
+  border: solid 1px #09d3ac;
+}

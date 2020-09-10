@@ -1,5 +1,6 @@
 /** CSS STYLE **/
 body {
+
   box-sizing: borber-box;
 
   color: #303846;
@@ -24,6 +25,8 @@ h2 {
 }
 
 ul {
+  margin-right: 30px;
+
   list-style: none;
 }
 
@@ -37,15 +40,25 @@ li {
 }
 
 .header {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  box-sizing: border-box;
+
+  width: 100%;
+
   height: 60px;
   padding: 5px 20px 5px 20px;
 
   font-size: 0.85em;
 
-  border-bottom: solid 1px black;
+  background-color: white;
 }
 
 .logo {
@@ -68,4 +81,45 @@ li {
 
 .nav {
   display: flex;
+}
+
+.block1 {
+  box-sizing: border-box;
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  color: white;
+
+  background: url("../img/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.block1 img {
+  width: 200px;
+  height: 200px;
+}
+
+.content-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  margin: auto;
+}
+
+.content-conteiner p {
+  margin-top: 20px;
+}
+
+.block1-btn {
+  margin-top: 20px;
+  padding: 10px;
+
+  font-weight: bold;
+  font-size: 1em;
+
+  border: solid 1px white;
+  border-radius: 10px;
 }

@@ -11,3 +11,7 @@ $ make install
 ```sh
 make lint
 ```
+
+## Look at result
+
+https://myfirst-project.surge.sh/

@@ -196,3 +196,19 @@ li {
 .flex-left {
   justify-content: left;
 }
+
+.footer-bg-color{
+  background-color: #303846;
+}
+
+.footer-header {
+  font-size: 1em;
+}
+
+.footer-ul {
+  list-style: disc;
+}
+
+.flex-align-center {
+  align-items: center;
+}

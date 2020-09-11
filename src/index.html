@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ЖК "Лунное море" от funnydrew</title>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" /> 
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -24,17 +24,17 @@
     </header>
 
     <main>
-        <div class="block1">
-            <div class="content-box flex-column">
-                <img src="img/logo.svg" alt="Логотип компании">
+        <div class="section section-background-img">
+            <div class="flex-column block color-white">
+                <img class=block1-img src="img/logo.svg" alt="Логотип компании">
                 <h1>ЖК "Лунное море"</h1>
                 <p>Место, откуда не хочется улетать</p>
-                <div class="block1-btn"> Забронировать</div>                
+                <a href="#send" class="btn color-white"> Забронировать</a>                
             </div>
         </div>
 
         <div>
-            <div id="adv" class="advantages block">
+            <div id="adv" class="block flex-row">
                 <div class="advantage-block">
                     <h2>Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами,
@@ -54,9 +54,9 @@
                 
             </div>
 
-            <div id="about" class="about">
-                <div class="content-conteiner-row">
-                    <div class="about-content">
+            <div id="about" class="section section-background-color">
+                <div class="block flex-row">
+                    <div class="block-side-content">
                         <h2>О ЖК "Лунное море"</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                             к тому же связь с мегаполисом не теряется – современные скоростные
@@ -66,50 +66,76 @@
                             Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.
                         </p>                        
                     </div>
-                    <img class="block-image" src="img/moon-1.jpg" alt="Moon">
+                    <img class="block-side-img" src="img/moon-1.jpg" alt="Moon">
                 </div>
             </div>
 
-            <div id="rest" class="place-to-rest content-conteiner-row">
-                <img class="block-image" src="img/moon-2.jpg" alt="Moon">
-                <div class="about-content">
-                        <h2>Места для отдыха</h2>
-                        <p>Луна обладает всеми условиями для комфортного отдыха от большого города. 
-                           В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
-                        </p>
-                        <p>
-                           Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
-                        </p>                        
-                    </div>
-                
+            <div id="rest" class="section">
+                <div class="block flex-row">
+                    <img class="block-side-img" src="img/moon-2.jpg" alt="Moon">
+                    <div class="block-side-content">
+                            <h2>Места для отдыха</h2>
+                            <p>Луна обладает всеми условиями для комфортного отдыха от большого города. 
+                            В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
+                            </p>
+                            <p>
+                            Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
+                            </p>                        
+                     </div>
+                </div>
             </div>
         </div>
-        <div class="section">
-            <div class="content-box flex-column">
+        <div class="section section-background-color">
+            <div class="block flex-column">
                 <h2>Оставьте заявку сегодня!</h2>
-                <form class="form-size">
-                    <fieldset class="form-view">
-                        <legend>Параметры квартиры</legend>
-                        <label>Количество комнат</label>
-                        <select>                            
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>                            
-                        </select>
-                        <label>Отделка</label>
-                        <select>
-                            <option value="one">без отделки</option>
-                            <option value="two">лунный камень</option>
-                            <option value="three">лава Венеры</option>                            
-                        </select>
+                <form class="w50">
+                    <fieldset class="form-border">
+                        <legend class="form-text">Параметры квартиры</legend>
+                        <div class="flex-column">
+                            <div class="flex-row flex-between w100 form-padding">
+                                <label>Количество комнат</label>
+                                <select class="w50 input-brd-radius">                            
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>                            
+                                </select>
+                            </div>
+                            <div class="flex-row flex-between w100 form-padding"v>
+                                <label>Отделка</label>
+                                <select class="w50 input-brd-radius">
+                                    <option value="one">Без отделки</option>
+                                    <option value="two">Лунный камень</option>
+                                    <option value="three">Марсианский песок</option>                            
+                                </select>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
-                <form>
 
+                <form class="w50">
+                    <fieldset class="form-border">
+                        <legend class="form-text">Контактная информация</legend>
+                        <div class="flex-column">
+                            <div class="flex-row flex-between w100 form-padding">
+                                <label>Имя</label>
+                                <input class="w50 input-brd-radius" type="text">
+                            </div>
+                            <div class="flex-row flex-between w100 form-padding">
+                                <label>Телефон</label>
+                                <input class="w50 input-brd-radius" type="text">
+                            </div>
+                            <div class="flex-row flex-between w100 form-padding">
+                                <label>E-mail</label>
+                                <input class="w50 input-brd-radius" type="text">
+                            </div>
+                        </div>
+                    </fieldset>
                 </form>
-                <button>
-
-                </button>
+                <div class="w50">
+                    <button id="send" class="btn form-text form-color">
+                        Отправить
+                    </button>                
+                </div>
             </div>
         </div>
     </main>

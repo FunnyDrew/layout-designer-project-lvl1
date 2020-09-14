@@ -2,9 +2,9 @@ install:
 	npm install
 
 lint:
-	npx stylelint ./src/styles/*.css
 	npx htmlhint ./src/*.html
-
+	npx stylelint ./src/styles/*.css
+	
 deploy:
 	npx surge ./src/ --domain myfirst-project.surge.sh/
 

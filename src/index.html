@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img class="logo-img" src="img/logo.svg" alt="logo">
+    <header class="header flex-row flex-between flex-align-items-center w100">
+        <div class="flex-row">
+            <img class="img-40to40" src="img/logo.svg" alt="logo">
             <div class="logo-name">ЖК Лунное море</div>
         </div>        
 
-        <ul class="nav">
+        <ul class="flex-row ul-unstyled">
             <li class="menu-item"> <a href="#adv">Преимущества</a></li>
             <li class="menu-item"> <a href="#about">О ЖК "Лунное море"</a></li>
             <li class="menu-item"> <a href="#rest">Места отдыха</a></li>
@@ -24,12 +24,12 @@
     </header>
 
     <main>
-        <div class="section section-background-img">
+        <div class="section-background-img">
             <div class="flex-column block color-white">
-                <img class=block1-img src="img/logo.svg" alt="Логотип компании">
+                <img class="img-200to200" src="img/logo.svg" alt="Логотип компании">
                 <h1>ЖК "Лунное море"</h1>
                 <p>Место, откуда не хочется улетать</p>
-                <a href="#send" class="btn color-white"> Забронировать</a>                
+                <a href="#send" class="btn btn-white"> Забронировать</a>                
             </div>
         </div>
 
@@ -54,7 +54,7 @@
                 
             </div>
 
-            <div id="about" class="section section-background-color">
+            <div id="about" class="section-background-color">
                 <div class="block flex-row">
                     <div class="block-side-content">
                         <h2>О ЖК "Лунное море"</h2>
@@ -85,14 +85,14 @@
                 </div>
             </div>
         </div>
-        <div class="section section-background-color">
-            <div class="block flex-column">
+        <div class="section-background-color">
+            <div id="send" class="block flex-column">
                 <h2>Оставьте заявку сегодня!</h2>
-                <form class="w50">
+                <form class="w50 form-box">
                     <fieldset class="form-border">
                         <legend class="form-text">Параметры квартиры</legend>
                         <div class="flex-column">
-                            <div class="flex-row flex-between w100 form-padding">
+                            <div class="flex-row flex-between w100 input-padding">
                                 <label>Количество комнат</label>
                                 <select class="w50 input-brd-radius">                            
                                     <option>1</option>
@@ -100,7 +100,7 @@
                                     <option>3</option>                            
                                 </select>
                             </div>
-                            <div class="flex-row flex-between w100 form-padding"v>
+                            <div class="flex-row flex-between w100 input-padding">
                                 <label>Отделка</label>
                                 <select class="w50 input-brd-radius">
                                     <option value="one">Без отделки</option>
@@ -116,23 +116,23 @@
                     <fieldset class="form-border">
                         <legend class="form-text">Контактная информация</legend>
                         <div class="flex-column">
-                            <div class="flex-row flex-between w100 form-padding">
+                            <div class="flex-row flex-between w100 input-padding">
                                 <label>Имя</label>
-                                <input class="w50 input-brd-radius" type="text">
+                                <input class="w50 input-brd-radius unbordered" type="text">
                             </div>
-                            <div class="flex-row flex-between w100 form-padding">
+                            <div class="flex-row flex-between w100 input-padding">
                                 <label>Телефон</label>
-                                <input class="w50 input-brd-radius" type="text">
+                                <input class="w50 input-brd-radius unbordered" type="text">
                             </div>
-                            <div class="flex-row flex-between w100 form-padding">
+                            <div class="flex-row flex-between w100 input-padding">
                                 <label>E-mail</label>
-                                <input class="w50 input-brd-radius" type="text">
+                                <input class="w50 input-brd-radius unbordered" type="text">
                             </div>
                         </div>
                     </fieldset>
                 </form>
                 <div class="w50">
-                    <button id="send" class="btn form-text form-color">
+                    <button class="btn btn-colored section-background-color">
                         Отправить
                     </button>                
                 </div>
@@ -140,27 +140,27 @@
         </div>
     </main>
 
-    <footer class="section footer-bg-color color-white">
+    <footer class="footer-bg-color color-white footer-text">
         <div class="block flex-row flex-align-center">
             <div>
-                <div class="logo">
-                    <img class="logo-img" src="img/logo.svg" alt="logo">
+                <div class="flex-row">
+                    <img class="img-40to40" src="img/logo.svg" alt="logo">
                     <div class="logo-name">ЖК Лунное море</div>
                 </div>
                 <div><small>&copy; 2032</small></div>
             </div>
             <div>
-                <p class="footer-header"> Проектная документация</p>
-                <ul class="footer-ul">
+                <p class="footer-headers"> Проектная документация</p>
+                <ul>
                     <li><a class="color-white" href="#">Скачать</a></li>
                     <li><a class="color-white" href="#">Посмотреть на сайте</a></li>
                 </ul>
             </div>
             <div>
-                <p class="footer-header"> О Застройщике</p>
-                <ul class="footer-ul">
+                <p class="footer-headers"> О Застройщике</p>
+                <ul>
                     <li><a class="color-white" href="#">Отзывы</a></li>
-                    <li><a class="color-white" href="https://hexle.io">Сайт компании</a></li>
+                    <li><a class="color-white" href="https://hexlet.io">Сайт компании</a></li>
                 </ul>
             </div>
         </div>

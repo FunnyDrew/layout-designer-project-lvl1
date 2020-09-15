@@ -1,6 +1,10 @@
 /** CSS STYLE **/
 body {
 
+  padding: 0;
+
+  margin: 0;
+
   box-sizing: borber-box;
 
   color: #303846;
@@ -116,7 +120,7 @@ a {
 }
 
 .menu-item {
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 .section-background-color {
@@ -127,6 +131,10 @@ a {
   background: url("../img/banner.png");
   background-position: center;
   background-size: cover;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .w50 {

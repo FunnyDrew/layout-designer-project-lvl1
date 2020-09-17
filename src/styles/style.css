@@ -1,11 +1,10 @@
 /** CSS STYLE **/
 body {
-
-  padding: 0;
+  box-sizing: borber-box;
 
   margin: 0;
 
-  box-sizing: borber-box;
+  padding: 0;
 
   color: #303846;
 
@@ -29,8 +28,6 @@ h2 {
 }
 
 .ul-unstyled {
-  margin-right: 30px;
-
   list-style: none;
 }
 
@@ -43,7 +40,8 @@ a {
   text-decoration: none;
 }
 
-.block {
+.block-container {
+  box-sizing: border-box;
   width: 1000px;
   margin: 0 auto;
   padding-top: 60px;
@@ -84,7 +82,7 @@ a {
   border-radius: 10px;
 }
 
-.color-white {
+.text-color-white {
   color: white;
 }
 
@@ -119,8 +117,13 @@ a {
   height: 200px;
 }
 
-.menu-item {
+.menu-item-margin {
   margin-right: 20px;
+}
+
+.section-container {
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .section-background-color {
@@ -145,12 +148,11 @@ a {
   width: 100%;
 }
 
-.header {
+.header-substrate-block {
+  padding: 30px;
+}
 
-  position: fixed;
-  top: 0;
-  left: 0;
-
+.header-style {
   box-sizing: border-box;
 
   height: 60px;
@@ -161,11 +163,20 @@ a {
   background-color: white;
 }
 
-.logo-name {
+.header-fixed {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo-name-style {
+  font-size: 1rem;
+}
+
+.logo-name-box {
   margin: auto;
   padding: 10px;
-
-  font-size: 1rem;
 }
 
 .strength-block {
@@ -174,11 +185,7 @@ a {
   margin: 20px;
 }
 
-.form-color {
-  border-color: #09d3ac;
-}
-
-.form-text {
+.form-text-style {
   color: #09d3ac;
   font-weight: bold;
 }
@@ -202,7 +209,7 @@ a {
   outline: none;
 }
 
-.form-border {
+.form-brd-color-thick {
   border: solid 2px #09d3ac;
 }
 
@@ -210,11 +217,11 @@ a {
   background-color: #303846;
 }
 
-.footer-headers {
+.footer-columnheader-style {
   font-weight: bold;
   font-size: 1.25em;
 }
 
-.footer-text {
-  font-size: 0.75em;
+.footer-text-style {
+  font-size: 0.8em;
 }

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header-style  header-fixed flex-row flex-between flex-align-items-center w100 text-bold">
+    <header class="header-style  header-fixed flex-row flex-between flex-align-items-center w-100p text-bold">
         <div class="flex-row">
             <img class="img-40to40" src="img/logo.svg" alt="logo">
-            <div class="logo-name-box logo-name-style">ЖК Лунное море</div>
+            <div class="logo-name-box font-1rem">ЖК Лунное море</div>
         </div>        
 
         <ul class="flex-row ul-unstyled">
@@ -24,7 +24,7 @@
     </header>
     <div class="header-substrate-block"></div>
     <main>
-        <section class="section-container section-background-img">
+        <section class="section-container bg-img-space">
             <div class="flex-column block-container text-color-white">
                 <img class="img-200to200" src="img/logo.svg" alt="Логотип компании">
                 <h1>ЖК "Лунное море"</h1>
@@ -33,21 +33,21 @@
             </div>
         </section>
 
-        <section class="section-container">
-            <div id="strength" class="block-container flex-row">
-                <div class="strength-block">
+        <section>
+            <div id="strength" class="block-container flex-row flex-between">
+                <div class="w-30p">
                     <h2>Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами,
                          чтобы вы могли наслаждаться метеоритными потоками.
                     </p>
                 </div>
-                <div class="strength-block">
+                <div class="w-30p">
                     <h2>Инфраструктура</h2>
                     <p>Прекрасные дороги рядом с домом. Много мест для прогулки. 
                         Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
                     </p>
                 </div>
-                <div class="strength-block">
+                <div class="w-30p">
                     <h2>Близость к Москве</h2>
                     <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
                 </div>                
@@ -57,7 +57,7 @@
         <section id="about" class="section-container section-background-color">
             
             <div class="block-container flex-row">
-                <div class="block-side-content">
+                <div class="w-45p">
                     <h2>О ЖК "Лунное море"</h2>
                     <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, 
                         к тому же связь с мегаполисом не теряется – современные скоростные
@@ -67,14 +67,14 @@
                         Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.
                     </p>                        
                 </div>
-                <img class="block-side-img" src="img/moon-1.jpg" alt="Moon">
+                <img class="w-30p" src="img/moon-1.jpg" alt="Moon">
             </div>
         </section>
 
         <section id="rest" class="section-container">
             <div class="block-container flex-row">
-                <img class="block-side-img" src="img/moon-2.jpg" alt="Moon">
-                <div class="block-side-content">
+                <img class="w-30p" src="img/moon-2.jpg" alt="Moon">
+                <div class="w-45p">
                      <h2>Места для отдыха</h2>
                      <p>Луна обладает всеми условиями для комфортного отдыха от большого города. 
                         В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
@@ -85,24 +85,24 @@
                 </div>
             </div>            
         </section>
-        <section class="section-container section-background-color">
+        <section class="section-background-color">
             <div id="send" class="block-container flex-column">
                 <h2>Оставьте заявку сегодня!</h2>
-                <form class="w50 form-box">
-                    <fieldset class="form-brd-color-thick">
+                <form class="w-50p form-box-margin">
+                    <fieldset class="form-brd-color-thick m-10">
                         <legend class="form-text-style">Параметры квартиры</legend>
                         <div class="flex-column">
-                            <div class="flex-row flex-between w100 input-padding">
+                            <div class="flex-row flex-between w-100p form-input-padding">
                                 <label class="text-bold">Количество комнат</label>
-                                <select class="w50 input-brd-radius">                            
+                                <select class="w-50p form-input-brd-radius">                            
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>                            
                                 </select>
                             </div>
-                            <div class="flex-row flex-between w100 input-padding">
+                            <div class="flex-row flex-between w-100p form-input-padding">
                                 <label class="text-bold">Отделка</label>
-                                <select class="w50 input-brd-radius">
+                                <select class="w-50p form-input-brd-radius">
                                     <option value="one">Без отделки</option>
                                     <option value="two">Лунный камень</option>
                                     <option value="three">Марсианский песок</option>                            
@@ -110,37 +110,34 @@
                             </div>
                         </div>
                     </fieldset>
-                </form>
-
-                <form class="w50">
-                    <fieldset class="form-brd-color-thick">
+               
+                    <fieldset class="form-brd-color-thick m-10">
                         <legend class="form-text-style">Контактная информация</legend>
                         <div class="flex-column">
-                            <div class="flex-row flex-between w100 input-padding">
+                            <div class="flex-row flex-between w-100p form-input-padding">
                                 <label class="text-bold">Имя</label>
-                                <input class="w50 input-brd-radius unbordered" type="text">
+                                <input class="w-50p form-input-brd-radius unbordered" type="text">
                             </div>
-                            <div class="flex-row flex-between w100 input-padding">
+                            <div class="flex-row flex-between w-100p form-input-padding">
                                 <label class="text-bold">Телефон</label>
-                                <input class="w50 input-brd-radius unbordered" type="text">
+                                <input class="w-50p form-input-brd-radius unbordered" type="text">
                             </div>
-                            <div class="flex-row flex-between w100 input-padding">
+                            <div class="flex-row flex-between w-100p form-input-padding">
                                 <label class="text-bold">E-mail</label>
-                                <input class="w50 input-brd-radius unbordered" type="text">
+                                <input class="w-50p form-input-brd-radius unbordered" type="text">
                             </div>
                         </div>
                     </fieldset>
-                </form>
-                <div class="w50">
-                    <button class="btn btn-colored section-background-color">
+        
+                    <button class="btn btn-colored m-10">
                         Отправить
                     </button>                                    
-                </div>
+                </form>
             </div>
         </section>        
-    </main>
+    </main> 
 
-    <footer class="footer-bg-color text-color-white footer-text-style">
+    <footer class="footer-bg-color text-color-white font-0-8em">
         <div class="block-container flex-row flex-align-center">
             <div>
                 <div class="flex-row">
@@ -150,20 +147,20 @@
                 <div><small>&copy; 2032</small></div>
             </div>
             <div>
-                <p class="footer-columnheader-style"> Проектная документация</p>
+                <p class="font-1-25em text-bold"> Проектная документация</p>
                 <ul>
-                    <li><a class="text-color-white footer-text-style" href="#">Скачать</a></li>
-                    <li><a class="text-color-white footer-text-style" href="#">Посмотреть на сайте</a></li>
+                    <li><a class="text-color-white font-0-8em" href="#">Скачать</a></li>
+                    <li><a class="text-color-white font-0-8em" href="#">Посмотреть на сайте</a></li>
                 </ul>
             </div>
             <div>
-                <p class="footer-columnheader-style text-color-white"> О Застройщике</p>
+                <p class="font-1-25em text-bold text-color-white"> О Застройщике</p>
                 <ul>
-                    <li><a class="text-color-white footer-text-style" href="#">Отзывы</a></li>
-                    <li><a class="text-color-white footer-text-style" href="https://hexlet.io">Сайт компании</a></li>
+                    <li><a class="text-color-white font-0-8em" href="#">Отзывы</a></li>
+                    <li><a class="text-color-white font-0-8em" href="https://hexlet.io">Сайт компании</a></li>
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> 
 </body>
 </html>

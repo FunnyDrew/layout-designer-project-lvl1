@@ -1,6 +1,5 @@
 /** CSS STYLE **/
 body {
-  box-sizing: borber-box;
 
   margin: 0;
 
@@ -41,25 +40,18 @@ a {
 }
 
 .block-container {
-  box-sizing: border-box;
   width: 1000px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.block-side-content {
-  width: 45%;
-}
-
-.block-side-img {
-  width: 30%;
-}
-
 .btn {
   box-sizing: border-box;
   margin-top: 20px;
   padding: 10px;
+
+  background: none;
 }
 
 .btn-white {
@@ -82,10 +74,6 @@ a {
   border-radius: 10px;
 }
 
-.text-color-white {
-  color: white;
-}
-
 .flex-row {
   display: flex;
   justify-content: space-around;
@@ -105,6 +93,18 @@ a {
   align-items: center;
 }
 
+.font-1-25em {
+  font-size: 1.25em;
+}
+
+.font-0-8em {
+  font-size: 0.8em;
+}
+
+.font-1rem {
+  font-size: 1rem;
+}
+
 .img-40to40 {
   width: 40px;
 
@@ -121,30 +121,35 @@ a {
   margin-right: 20px;
 }
 
-.section-container {
-  width: 100vw;
-  margin: 0 auto;
+.m-10 {
+  margin: 10px 0 10px 0;
 }
 
 .section-background-color {
   background-color: #f7f7f7;
 }
 
-.section-background-img {
-  background: url("../img/banner.png");
-  background-position: center;
-  background-size: cover;
-}
-
 .text-bold {
   font-weight: bold;
 }
 
-.w50 {
+.text-color-white {
+  color: white;
+}
+
+.w-30p {
+  width: 30%;
+}
+
+.w-45p {
+  width: 45%;
+}
+
+.w-50p {
   width: 50%;
 }
 
-.w100 {
+.w-100p {
   width: 100%;
 }
 
@@ -170,19 +175,15 @@ a {
   left: 0;
 }
 
-.logo-name-style {
-  font-size: 1rem;
-}
-
 .logo-name-box {
   margin: auto;
   padding: 10px;
 }
 
-.strength-block {
-  width: 30%;
-
-  margin: 20px;
+.bg-img-space {
+  background: url("../img/banner.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .form-text-style {
@@ -190,17 +191,17 @@ a {
   font-weight: bold;
 }
 
-.form-box {
+.form-box-margin {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.input-padding {
+.form-input-padding {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.input-brd-radius {
+.form-input-brd-radius {
   background-color: white;
 
   border-color: #f7f7f7;
@@ -215,13 +216,4 @@ a {
 
 .footer-bg-color {
   background-color: #303846;
-}
-
-.footer-columnheader-style {
-  font-weight: bold;
-  font-size: 1.25em;
-}
-
-.footer-text-style {
-  font-size: 0.8em;
 }
